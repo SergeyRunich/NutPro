@@ -1,0 +1,1 @@
+import{a7 as e}from"./index-c20b5e8e.js";const s=async(t,n)=>{const a={method:"GET",endpoint:`/admin/payments?start=${t}&end=${n}`};return e(a).fetch()},r=async t=>{const n={method:"GET",endpoint:`/admin/orders/${t}/payments`};return e(n).fetch()},c=async t=>{const n={method:"POST",endpoint:`/admin/gopay-payment/${t}`};return e(n).fetch()};export{r as a,c,s as g};

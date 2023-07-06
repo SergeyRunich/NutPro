@@ -1,0 +1,1 @@
+import{a7 as e}from"./index-c20b5e8e.js";const o=async()=>e({method:"GET",endpoint:"/admin/extra-day"}).fetch(),s=async t=>e({method:"POST",endpoint:"/admin/extra-day",body:t}).fetch(),r=async t=>e({method:"PATCH",endpoint:"/admin/extra-day/",body:t}).fetch();export{s as c,o as g,r as u};

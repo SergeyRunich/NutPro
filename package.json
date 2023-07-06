@@ -1,0 +1,126 @@
+{
+  "name": "nutrition-pro-admin-panel",
+  "version": "2.20.0",
+  "private": true,
+  "homepage": ".",
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "lint-staged": "lint-staged",
+    "prettier": "prettier --write \"src/**/*.{js,jsx,ts,tsx,scss,less}\"",
+    "eslint": "eslint --ext .js,jsx src",
+    "tslint": "tslint \"src/**/*.{ts,tsx}\"",
+    "stylelint": "stylelint \"src/**/*.{scss,less}\"",
+    "commit": "cz"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,scss,less}": [
+      "prettier --write",
+      "git add"
+    ],
+    "src/**/*.{js,jsx}": [
+      "eslint"
+    ],
+    "src/**/*.{scss,less}": [
+      "stylelint"
+    ]
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.6.2",
+    "@redux-devtools/extension": "^3.2.2",
+    "@rowno/sparkline": "^4.0.0",
+    "@sentry/react": "^6.19.7",
+    "@sentry/tracing": "^6.19.7",
+    "antd": "3.26.17",
+    "bootstrap-css-only": "^4.3.1",
+    "chart.js": "^2.9.4",
+    "chartist": "^0.11.3",
+    "chartist-plugin-legend": "^0.6.2",
+    "chartist-plugin-tooltips-updated": "^0.0.21",
+    "classnames": "^2.3.1",
+    "connected-react-router": "^6.9.1",
+    "d3-dsv": "^1.1.1",
+    "d3-format": "^1.4.5",
+    "d3-time-format": "^2.3.0",
+    "enquire-js": "^0.2.1",
+    "file-saver": "^2.0.5",
+    "google-map-react": "^1.1.7",
+    "history": "^4.9.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "nprogress": "^0.2.0",
+    "peity-react": "^0.0.7",
+    "prop-types": "^15.7.2",
+    "qs": "^6.10.1",
+    "rc-drawer": "^1.10.1",
+    "react": "^16.14.0",
+    "react-beautiful-dnd": "^13.1.0",
+    "react-c3js": "^0.1.20",
+    "react-chartist": "^0.13.3",
+    "react-chartjs-2": "^2.11.2",
+    "react-custom-scrollbars": "^4.2.1",
+    "react-dom": "^16.14.0",
+    "react-draft-wysiwyg": "^1.14.7",
+    "react-google-places-autocomplete": "^2.3.2",
+    "react-helmet": "^5.2.1",
+    "react-highlight-words": "^0.17.0",
+    "react-intl": "^5.25.1",
+    "react-loadable": "^5.5.0",
+    "react-query": "^3.38.0",
+    "react-redux": "^7.2.4",
+    "react-redux-spinner": "^2.0.0",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-router-redux": "^4.0.8",
+    "react-scripts": "3.0.1",
+    "react-stockcharts": "^0.7.8",
+    "redux": "^4.1.0",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^1.0.5",
+    "redux-thunk": "^2.3.0",
+    "store": "^2.0.12"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.14.5",
+    "babel-plugin-import": "^1.13.3",
+    "commitizen": "^4.2.4",
+    "customize-cra": "^0.2.14",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-config-prettier": "^5.0.0",
+    "husky": "^2.4.1",
+    "less": "^3.13.1",
+    "less-loader": "^5.0.0",
+    "lint-staged": "^8.2.1",
+    "node-sass": "^4.14.1",
+    "prettier": "^1.18.2",
+    "react-app-rewired": "2.1.8",
+    "stylelint": "^10.1.0",
+    "stylelint-config-prettier": "^5.2.0",
+    "stylelint-config-standard": "^18.3.0",
+    "typescript": "^4.6.4"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

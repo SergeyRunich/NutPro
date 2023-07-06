@@ -1,0 +1,1 @@
+import{a7 as t}from"./index-c20b5e8e.js";const r=async()=>t({method:"GET",endpoint:"/erp/test/user"}).fetch(),a=async()=>t({method:"GET",endpoint:"/erp/test/user/advanced"}).fetch(),c=async({order:e="",user:s=""})=>{const n={method:"GET",endpoint:`/admin/user/view/menu?order=${e}&user=${s}`};return t(n).fetch()};export{a,c as b,r as g};

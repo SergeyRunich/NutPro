@@ -1,0 +1,1 @@
+import{a7 as n}from"./index-c20b5e8e.js";const r=async()=>n({method:"GET",endpoint:"/admin/kitchen"}).fetch(),a=async e=>n({method:"POST",endpoint:"/admin/erp/regenerate",body:e}).fetch(),c=async(e,t="")=>{const o={method:"GET",endpoint:`/admin/menu/week/${e}?b2b=${t}`};return n(o).fetch()};export{c as d,r as g,a as r};

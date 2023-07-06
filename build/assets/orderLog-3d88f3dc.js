@@ -1,0 +1,1 @@
+import{a7 as e}from"./index-c20b5e8e.js";const i=async({limit:o="",systemUser:r="",user:t="",order:s="",action:n=""})=>{const a={method:"GET",endpoint:`/admin/logs/order?limit=${o}&systemUser=${r}&user=${t}&order=${s}&action=${n}`};return e(a).fetch()},c=async o=>{const r={method:"GET",endpoint:`/admin/logs/order?order=${o}`};return e(r).fetch()};export{c as a,i as g};

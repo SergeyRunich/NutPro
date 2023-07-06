@@ -1,0 +1,52 @@
+@import 'assets/styles/mixins.scss';
+
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  border-top: 1px dashed $gray-border;
+  // padding-top: rem(15);
+
+  &:first-child {
+    border-top: none;
+  }
+}
+
+.large {
+  .name {
+    font-size: rem(16);
+  }
+
+  .note {
+    font-size: rem(13);
+  }
+
+  .actionData {
+    font-size: rem(18);
+  }
+}
+
+.borderedBottom {
+  border-bottom: 1px dashed $gray-border;
+}
+
+.description {
+  flex-grow: 1;
+  padding-right: rem(15);
+  margin-right: auto;
+  // margin-bottom: rem(15);
+}
+
+.name {
+  font-size: rem(12);
+  font-weight: 700;
+}
+
+.actionData {
+  // margin-bottom: rem(15);
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+  font-size: rem(12);
+}

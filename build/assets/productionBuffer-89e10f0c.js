@@ -1,0 +1,1 @@
+import{a7 as o}from"./index-c20b5e8e.js";const r=async()=>o({method:"GET",endpoint:"/admin/production-buffer"}).fetch(),i=async(t,n)=>{const e={method:"GET",endpoint:`/admin/production-buffer/${t}/${n}`};return o(e).fetch()},c=async t=>o({method:"POST",endpoint:"/admin/production-buffer",body:t}).fetch();export{r as a,i as g,c as p};
